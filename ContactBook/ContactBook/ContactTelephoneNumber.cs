@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ContactBook
 {
-    class ContactTelephoneNumber
+    public class ContactTelephoneNumber
     {
+        public int ContactTelephoneNumberID { get; set; }        
         public int ContactID { get; set; }
         public virtual Contact Contact { get; set; }
         public int TelephoneTypeID { get; set; }

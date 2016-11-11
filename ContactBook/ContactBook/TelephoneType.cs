@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ContactBook
 {
-    class TelephoneType
+    public class TelephoneType
     {
         public int TelephoneTypeID { get; set; }
         public string TelephoneTypeName { get; set; }

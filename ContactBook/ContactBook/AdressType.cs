@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ContactBook
 {
-    class AdressType
+    public class AdressType
     {
         public int AdressTypeID { get; set; }
         public int AdressTypeName { get; set; }
