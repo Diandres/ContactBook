@@ -9,6 +9,6 @@ namespace ContactBook
     public class AdressType
     {
         public int AdressTypeID { get; set; }
-        public int AdressTypeName { get; set; }
+        public string AdressTypeName { get; set; }
     }
 }

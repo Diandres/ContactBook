@@ -8,7 +8,7 @@ namespace ContactBook
     {
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<ContactAdress> ContactAdresses { get; set; }
-        public virtual DbSet<ContactTelephoneNumber> ContactTelephoneNumber { get; set; }
+        public virtual DbSet<ContactTelephoneNumber> ContactTelephoneNumbers { get; set; }
         public virtual DbSet<TelephoneType> TelephoneTypes { get; set; }
         public virtual DbSet<AdressType> AdressTypes { get; set; }
 
