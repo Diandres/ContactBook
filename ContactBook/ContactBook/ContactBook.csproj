@@ -67,12 +67,6 @@
     <Compile Include="Contact.cs" />
     <Compile Include="ContactAdress.cs" />
     <Compile Include="ContactBoockContext.cs" />
-    <Compile Include="ContactForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ContactForm.Designer.cs">
-      <DependentUpon>ContactForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ContactTelephoneNumber.cs" />
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -117,9 +111,6 @@
     <Compile Include="TelephoneType.cs" />
     <EmbeddedResource Include="AdressTypeForm.resx">
       <DependentUpon>AdressTypeForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ContactForm.resx">
-      <DependentUpon>ContactForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ContactBookForm.resx">
       <DependentUpon>ContactBookForm.cs</DependentUpon>
