@@ -57,6 +57,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdressDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdressDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AdressType.cs" />
     <Compile Include="AdressTypeForm.cs">
       <SubType>Form</SubType>
@@ -79,6 +84,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +103,10 @@
     <Compile Include="Migrations\201611141145583_new.cs" />
     <Compile Include="Migrations\201611141145583_new.Designer.cs">
       <DependentUpon>201611141145583_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611172212491_fixed.cs" />
+    <Compile Include="Migrations\201611172212491_fixed.Designer.cs">
+      <DependentUpon>201611172212491_fixed.cs</DependentUpon>
     </Compile>
     <Compile Include="TelephoneTypeForm.cs">
       <SubType>Form</SubType>
@@ -118,6 +133,9 @@
     <EmbeddedResource Include="ContactForm.resx">
       <DependentUpon>ContactForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611141145583_new.resx">
       <DependentUpon>201611141145583_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611172212491_fixed.resx">
+      <DependentUpon>201611172212491_fixed.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelephoneTypeForm.resx">
       <DependentUpon>TelephoneTypeForm.cs</DependentUpon>
@@ -142,6 +163,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="AdressDataSet.xsc">
+      <DependentUpon>AdressDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AdressDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdressDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdressDataSet.xss">
+      <DependentUpon>AdressDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>

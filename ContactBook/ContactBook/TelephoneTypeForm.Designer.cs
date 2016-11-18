@@ -50,6 +50,7 @@
             this.telephoneTypesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmdGoBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.telephoneTypesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.telephoneTypesBindingNavigator)).BeginInit();
@@ -236,11 +237,22 @@
             this.dataGridViewTextBoxColumn2.HeaderText = "TelephoneTypeName";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
+            // cmdGoBack
+            // 
+            this.cmdGoBack.Location = new System.Drawing.Point(188, 487);
+            this.cmdGoBack.Name = "cmdGoBack";
+            this.cmdGoBack.Size = new System.Drawing.Size(294, 110);
+            this.cmdGoBack.TabIndex = 2;
+            this.cmdGoBack.Text = "Back";
+            this.cmdGoBack.UseVisualStyleBackColor = true;
+            this.cmdGoBack.Click += new System.EventHandler(this.cmdGoBack_Click);
+            // 
             // TelephoneTypeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 763);
+            this.Controls.Add(this.cmdGoBack);
             this.Controls.Add(this.telephoneTypesDataGridView);
             this.Controls.Add(this.telephoneTypesBindingNavigator);
             this.Name = "TelephoneTypeForm";
@@ -279,5 +291,6 @@
         private System.Windows.Forms.DataGridView telephoneTypesDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.Button cmdGoBack;
     }
 }
