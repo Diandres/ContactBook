@@ -109,6 +109,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelephoneType.cs" />
+    <EmbeddedResource Include="Migrations\201611111232006_first.resx" />
     <EmbeddedResource Include="AdressTypeForm.resx">
       <DependentUpon>AdressTypeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,9 +130,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelephoneTypeForm.resx">
       <DependentUpon>TelephoneTypeForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201611111232006_first.resx">
-      <DependentUpon>201611111232006_first.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
