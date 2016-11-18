@@ -1,6 +1,6 @@
 ﻿namespace ContactBook
 {
-    partial class Form1
+    partial class ContactBookForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactBookForm));
             this.dataSet1 = new ContactBook.DataSet1();
             this.contactsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.contactsTableAdapter = new ContactBook.DataSet1TableAdapters.ContactsTableAdapter();
