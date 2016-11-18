@@ -57,11 +57,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdressDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AdressDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="AdressType.cs" />
     <Compile Include="AdressTypeForm.cs">
       <SubType>Form</SubType>
@@ -90,12 +85,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201611111320397_fixDatabas.cs" />
     <Compile Include="Migrations\201611111320397_fixDatabas.Designer.cs">
       <DependentUpon>201611111320397_fixDatabas.cs</DependentUpon>
@@ -107,6 +96,10 @@
     <Compile Include="Migrations\201611172212491_fixed.cs" />
     <Compile Include="Migrations\201611172212491_fixed.Designer.cs">
       <DependentUpon>201611172212491_fixed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201611180900127_final.cs" />
+    <Compile Include="Migrations\201611180900127_final.Designer.cs">
+      <DependentUpon>201611180900127_final.cs</DependentUpon>
     </Compile>
     <Compile Include="TelephoneTypeForm.cs">
       <SubType>Form</SubType>
@@ -122,11 +115,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelephoneType.cs" />
-    <Compile Include="_ContactBook_ContactBoockContextDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_ContactBook_ContactBoockContextDataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AdressTypeForm.resx">
       <DependentUpon>AdressTypeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,9 +124,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611111320397_fixDatabas.resx">
       <DependentUpon>201611111320397_fixDatabas.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611172212491_fixed.resx">
       <DependentUpon>201611172212491_fixed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611180900127_final.resx">
+      <DependentUpon>201611180900127_final.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelephoneTypeForm.resx">
       <DependentUpon>TelephoneTypeForm.cs</DependentUpon>
@@ -163,17 +151,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="AdressDataSet.xsc">
-      <DependentUpon>AdressDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="AdressDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AdressDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="AdressDataSet.xss">
-      <DependentUpon>AdressDataSet.xsd</DependentUpon>
-    </None>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -195,17 +172,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="_ContactBook_ContactBoockContextDataSet.xsc">
-      <DependentUpon>_ContactBook_ContactBoockContextDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_ContactBook_ContactBoockContextDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_ContactBook_ContactBoockContextDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_ContactBook_ContactBoockContextDataSet.xss">
-      <DependentUpon>_ContactBook_ContactBoockContextDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
