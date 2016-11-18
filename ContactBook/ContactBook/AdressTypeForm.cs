@@ -35,7 +35,7 @@ namespace ContactBook
         private void cmdGoBack_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form frm = new Form1();
+            Form frm = new ContactBookForm();
             frm.Show();
         }
     }
