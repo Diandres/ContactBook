@@ -272,7 +272,7 @@ namespace ContactBook
 
                     ContactTelephoneNumber PhoneNumberToAdd = new ContactTelephoneNumber();
                     PhoneNumberToAdd.ContactID = selectedID;
-                    PhoneNumberToAdd.TelefonNumber = txtAdress.Text;
+                    PhoneNumberToAdd.TelefonNumber = txtPhoneNumber.Text;
                     PhoneNumberToAdd.TelephoneTypeID = (int)cbTypeOfAdress.SelectedValue;
                     context.ContactTelephoneNumbers.Add(PhoneNumberToAdd);
                     context.SaveChanges();
@@ -328,18 +328,19 @@ namespace ContactBook
 
         private void cmdAddNewTypeAddress_Click(object sender, EventArgs e)
         {
-            Form frm = new TelephoneTypeForm();
+          
+            Form frm = new AdressTypeForm();
             frm.Show();
             this.Hide();
-            
+
         }
 
         private void cmdAddNewTypeNumber_Click(object sender, EventArgs e)
         {
-            Form frm = new AdressTypeForm();
+            Form frm = new TelephoneTypeForm();
             frm.Show();
             this.Hide();
-           
+
         }
     }
 }
