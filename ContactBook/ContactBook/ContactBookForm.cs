@@ -273,7 +273,7 @@ namespace ContactBook
                     ContactTelephoneNumber PhoneNumberToAdd = new ContactTelephoneNumber();
                     PhoneNumberToAdd.ContactID = selectedID;
                     PhoneNumberToAdd.TelefonNumber = txtPhoneNumber.Text;
-                    PhoneNumberToAdd.TelephoneTypeID = (int)cbTypeOfAdress.SelectedValue;
+                    PhoneNumberToAdd.TelephoneTypeID = (int)cbTypeOfPhones.SelectedValue;
                     context.ContactTelephoneNumbers.Add(PhoneNumberToAdd);
                     context.SaveChanges();
                     contactsDataGridView_SelectionChanged(null, null);
